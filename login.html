@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Jugador - NexusPlay Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación con logo de videojuegos -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <span style="font-size: 1.8rem; font-weight: 800; color: #8b5cf6;">🎮 Nexus<span style="color: #ec4899;">Play</span></span>
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#catalogo">Catálogo</a>
+                <a href="index.html#comunidad">Comunidad</a>
+                <a href="index.html" class="btn-nav-back">← Volver al inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección principal de Registro Gamer -->
+    <main class="login-section">
+        <div class="login-wrapper">
+            <div class="login-card">
+                <div class="login-header">
+                    <span class="login-badge">🕹️ Nuevo Jugador</span>
+                    <h1>Crea tu Perfil Gamer</h1>
+                    <p>Regístrate gratis para competir en torneos, ganar recompensas y unirte a clanes</p>
+                </div>
+
+                <!-- Pestañas (Crear Cuenta activa por defecto) -->
+                <div class="auth-tabs">
+                    <button type="button" class="auth-tab">Iniciar Sesión</button>
+                    <button type="button" class="auth-tab active">Crear Cuenta</button>
+                </div>
+
+                <!-- Formulario de Registro de Videojuegos -->
+                <form action="#" method="POST">
+                    <div class="form-group-margin">
+                        <label for="gamertag" class="login-label">GamerTag / Nombre de Jugador</label>
+                        <input type="text" id="gamertag" name="gamertag" class="form-control-input" placeholder="Ej. ShadowSlayer99" required>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="email" class="login-label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control-input" placeholder="jugador@nexusplay.com" required>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="plataforma" class="login-label">Plataforma principal</label>
+                        <select id="plataforma" name="plataforma" class="form-control-select" required>
+                            <option value="">Selecciona dónde juegas...</option>
+                            <option value="pc">PC Master Race</option>
+                            <option value="ps5">PlayStation 5 / PS4</option>
+                            <option value="xbox">Xbox Series X|S / One</option>
+                            <option value="nintendo">Nintendo Switch</option>
+                            <option value="mobile">Mobile Gaming</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group-margin">
+                        <label for="password" class="login-label">Crea una contraseña</label>
+                        <input type="password" id="password" name="password" class="form-control-input" placeholder="Mínimo 8 caracteres" required>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="terminos" class="form-checkbox-input" required>
+                        <label for="terminos" class="form-checkbox-label">
+                            Acepto las reglas de juego limpio (Anti-Cheat) y los términos de la comunidad NexusPlay.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Completar Registro Gamer</button>
+                </form>
+
+                <div class="login-divider">
+                    <span>o regístrate rápido con</span>
+                </div>
+
+                <div class="social-login-grid">
+                    <button type="button" class="btn-social-auth">💬 Discord</button>
+                    <button type="button" class="btn-social-auth">🎮 Steam</button>
+                </div>
+
+                <p class="login-footer-text">
+                    ¿Ya tienes una cuenta gamer? <a href="#">Inicia sesión aquí</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>NexusPlay Portal de Videojuegos © 2026</p>
+                <p class="footer-author">Desarrollado por: Salazar Avilez Cristian Jair (5A PRO VESP)</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://discord.com" target="_blank" class="social-icon" title="Discord">💬</a>
+                <a href="https://twitch.tv" target="_blank" class="social-icon" title="Twitch">📺</a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" title="YouTube">▶</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter/X">🅧</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
